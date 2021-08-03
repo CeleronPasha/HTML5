@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title> 
+            Lesson HTML5
+        </title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <header class="header">
+            <h1>
+                Заголовок страницы
+            </h1>
+        </header>
+        <figure>
+            <img src="images/registr.jpg">
+            <figcaption> 
+                Пояснение к картинке
+            </figcaption>
+        </figure>
+
+        <form>
+            <section>
+                <h3>
+                    Send Email
+                </h3>
+                    <input type="email" name="email" required="required"><br><br>
+                    <input type="submit" name="отправить"><br><br>
+                <h3>
+                    Send Tel Number
+                </h3>
+                    <input type="tel" name="tel" placeholder="+38 (093) 123 45 67"><br><br>
+                    <input type="submit" name="отправить"><br><br>
+                <h3>
+                    Send URL
+                </h3>
+                    <input type="url" name="url"><br><br>
+                    <input type="submit" name="отправить"><br><br>
+                    search: <input type="search" name="search" maxlength="3"><br><br>
+                    <input type="submit" name="отправить"><br><br>
+                <h3> 
+                    new type input number
+                </h3>
+                <input type="number" name="num" min="1" max="31" step="3"><br><br>
+                <input type="submit" name="отправить"><br><br>
+                <h3> 
+                    new type input range
+                </h3>
+                <input type="range" name="num" min="1" max="31" step="3"><br><br>
+                <input type="submit" name="отправить"><br><br>
+                <h3> 
+                    Поиск с подсказками
+                </h3>
+                <input type="text" name="serch" placeholder="Поиск" list="serch"><br><br>
+                <input type="submit" name="отправить"><br><br>
+                <datalist id="serch">
+                    <option value="Харьков"></option>
+                    <option value="Киев"></option>
+                    <option value="Одесса"></option>
+                    <option value="Полтава"></option>
+                </datalist>
+                <h3> 
+                    Выберите цвет
+                </h3>
+                <input type="color" name="color" placeholder="выберите цвет"><br><br>
+                <input type="submit" name="отправить"><br><br>
+                <h3> 
+                    Дата Рождения
+                </h3>
+                <input type="date" name="date"><br><br>
+                <input type="submit" name="отправить"><br><br>
+                <progress min="10" max="100" value="55"></progress>
+                
+            </section>
+        </form>
+    </body>
+</html>
