@@ -74,7 +74,49 @@
                 </h3>
                 <input type="date" name="date"><br><br>
                 <input type="submit" name="отправить"><br><br>
-                <progress min="10" max="100" value="55"></progress>
+                <progress min="10" max="100" value="55"></progress><br><br>
+                
+                <video controls="controls" width="320"
+                        height="240" 
+                        poster="video/poster.jpg" 
+                        preload="preload" 
+                        autoplay="autoplay"
+                        muted="muted">
+                    <source src="video/vid.mp4" type="video/mp4">
+                    <source src="video/vid.webm" type="video/webm">
+                    <source src="video/vid.ogv" type="video/ogv">
+                    <p>
+                        Ваш браузер не может воспроизводить видео. Обновите.
+                    </p>
+                </video><br><br>
+
+                <audio controls="controls" autoplay="autoplay" muted="muted">
+                    <source src="audio/audio.ogg" type="audio/ogg">
+                    <source src="audio/audio.mp3" type="audio/mpeg">
+                </audio><br><br>
+
+                <canvas width="600" height="600" id="example">
+                    <script>
+                        var ctx=document.getElementById('example') .getContext('2d');
+                        ctx.fillStyle='#ff0000';
+                        ctx.fillRect(20,20,156,56);
+                        ctx.strokeRect (200,200,60,60);
+                        ctx.lineWidth=10;
+                        ctx.strokeStyle='#f0f00';
+
+                        ctx.beginPath();
+                        ctx.moveTo(100,100);
+                        ctx.lineTo(150,100);
+                        ctx.lineTo(190,200);
+                        ctx.lineTo(100,200);
+                        ctx.lineTo(100,100);
+                        ctx.closePath();
+                        ctx.strokeStyle='#0000ff';
+                        ctx.lineWidth=5;
+                        ctx.stroke();
+                    </script>
+
+                </canvas>
                 
             </section>
         </form>
